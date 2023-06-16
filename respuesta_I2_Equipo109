@@ -14,3 +14,31 @@ b- Si, ALFA puede actualizar su fork al estado del fork de GAMMA
 c- Si, GAMMA puede actualizar su fork al estado del fork de ALFA
 
 d- Si el rebase bien, deberian quedar ambos datos, de forma manual tenes que acomodar el texto si hay conflicostos.
+
+e- Los comandos utilizados paso a paso fueron:
+
+Para realizar cambios en el repositorio local:
+Realizados por: Acquisto Franco / San Sebastian Julian / Canelas Tomas Salvador
+
+git clone
+git add .
+git commit -m "mensaje"
+git push
+
+Para realizar un fork a un repositorio:
+Realizados por Canelas Tomas Salvador y Acquisto Franco durante el fork para obtener el archivo nuevodato.txt
+Y realizados por todos los integrantes: (Canelas Tomas Salvador y Acquisto Franco y San Sebastian Julian) Al momento de actualizar las respuestas de cada uno
+
+git remote rm upstream (Opcional si anteriormente habia un link a otro repositorio)
+git remote add upstream [link del repositorio al cual hacer el fork]
+git fetch upstream
+git log (opcional)
+git rebase upstream/main (Cambios realizados de forma local)
+git log (opcional)
+git push -f
+
+En caso de haber conflictos despues del git rebase upstream/main:
+git add . (Despues de editar las lineas del archivo que generan conflicto)
+git commit -m "mensaje"
+git rebase --continue
+git push -f
