@@ -1,3 +1,12 @@
 Franco Acquisto
 Julian San Sebastian
 Tomas Canelas
+
+a- Para actualizar mi repositorio al estado del repositorio del cual hice fork debo seguir la siguiente linea de comandos:
+
+git remote add upstream https://github.com/user/repo.git
+git fetch upstream
+git rebase upstream/main
+git push -f
+
+b- Si, ALFA puede actualizar su fork al estado del fork de GAMMA
