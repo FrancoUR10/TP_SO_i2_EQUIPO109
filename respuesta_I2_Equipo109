@@ -10,3 +10,7 @@ git rebase upstream/main
 git push -f
 
 b- Si, ALFA puede actualizar su fork al estado del fork de GAMMA
+
+c- Si, GAMMA puede actualizar su fork al estado del fork de ALFA
+
+d- Si el rebase bien, deberian quedar ambos datos, de forma manual tenes que acomodar el texto si hay conflicostos.
